@@ -1,0 +1,285 @@
+{
+  "generatedAt": "2026-06-03T10:26:39.869Z",
+  "numTotalTestSuites": 27,
+  "numPassedTestSuites": 27,
+  "numFailedTestSuites": 0,
+  "numTotalTests": 39,
+  "numPassedTests": 39,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "testResults": [
+    {
+      "suite": "tests/mappings/mappings.update.test.js",
+      "title": "Mappings - Update updates a mapping and verifies updated values persist",
+      "status": "passed",
+      "duration": 5,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.update.test.js",
+      "title": "Mappings - Update rejects invalid user ID with exact bad request status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.update.test.js",
+      "title": "Mappings - Update rejects invalid role ID with exact bad request status",
+      "status": "passed",
+      "duration": 2,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.update.test.js",
+      "title": "Mappings - Update rejects invalid institute ID with exact bad request status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/security/jwt.test.js",
+      "title": "Security - JWT rejects missing JWT with exact unauthorized status",
+      "status": "passed",
+      "duration": 2,
+      "failures": []
+    },
+    {
+      "suite": "tests/security/jwt.test.js",
+      "title": "Security - JWT rejects invalid JWT with exact unauthorized status",
+      "status": "passed",
+      "duration": 2,
+      "failures": []
+    },
+    {
+      "suite": "tests/security/jwt.test.js",
+      "title": "Security - JWT rejects tampered JWT with exact unauthorized status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/security/jwt.test.js",
+      "title": "Security - JWT rejects expired JWT with exact unauthorized status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/performance/concurrentRequests.test.js",
+      "title": "Performance - Concurrent Requests handles concurrent login requests within the response-time threshold",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/performance/concurrentRequests.test.js",
+      "title": "Performance - Concurrent Requests handles concurrent protected context requests without server errors",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.delete.test.js",
+      "title": "Mappings - Delete does not return a mapping after deletion",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.delete.test.js",
+      "title": "Mappings - Delete rejects mapping attempts for deleted entities with exact not found status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.delete.test.js",
+      "title": "Mappings - Delete prevents orphan mapping scenarios after parent entity deletion",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.create.test.js",
+      "title": "Mappings - Create creates a user-role-institute mapping",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.create.test.js",
+      "title": "Mappings - Create rejects duplicate mapping creation with exact conflict status",
+      "status": "passed",
+      "duration": 0,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.create.test.js",
+      "title": "Mappings - Create rejects missing required mapping fields with exact bad request status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/auth/auth.login.test.js",
+      "title": "Auth - Login logs in with valid credentials and returns token plus user context fields",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/auth/auth.login.test.js",
+      "title": "Auth - Login rejects invalid credentials with exact unauthorized status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/performance/stress.test.js",
+      "title": "Performance - Stress keeps repeated protected calls stable under a light stress scenario",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/auth/auth.context.test.js",
+      "title": "Auth - Context returns authenticated institute-role context with expected business fields",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/performance/responseTime.test.js",
+      "title": "Performance - Response Time validates protected context API response time",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/institutes/institutes.update.test.js",
+      "title": "Institutes - Update updates an institute and verifies updated values persist",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/security/authorization.test.js",
+      "title": "Security - Authorization rejects unauthorized role access with exact forbidden status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/roles/roles.update.test.js",
+      "title": "Roles - Update updates a role and verifies updated values persist",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/users/users.update.test.js",
+      "title": "Users - Update updates a user and verifies updated values persist",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/security/xss.test.js",
+      "title": "Security - XSS does not reflect XSS payloads in login errors",
+      "status": "passed",
+      "duration": 0,
+      "failures": []
+    },
+    {
+      "suite": "tests/security/sqlInjection.test.js",
+      "title": "Security - SQL Injection does not expose SQL internals for injection-style login payloads",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/institutes/institutes.get.test.js",
+      "title": "Institutes - Get gets an institute and verifies returned data matches the created record",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/institutes/institutes.delete.test.js",
+      "title": "Institutes - Delete deletes an institute and verifies it is no longer accessible",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/mappings/mappings.get.test.js",
+      "title": "Mappings - Get gets a mapping and verifies returned data matches the created record",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/security/malformedPayload.test.js",
+      "title": "Security - Malformed Payload rejects malformed JSON with exact bad request status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/users/users.get.test.js",
+      "title": "Users - Get gets a user and verifies returned data matches the created record",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/roles/roles.get.test.js",
+      "title": "Roles - Get gets a role and verifies returned data matches the created record",
+      "status": "passed",
+      "duration": 0,
+      "failures": []
+    },
+    {
+      "suite": "tests/users/users.delete.test.js",
+      "title": "Users - Delete deletes a user and verifies it is no longer accessible",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/roles/roles.delete.test.js",
+      "title": "Roles - Delete deletes a role and verifies it is no longer accessible",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/institutes/institutes.create.test.js",
+      "title": "Institutes - Create creates an institute and verifies a persisted identifier is returned",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/auth/auth.middleware.test.js",
+      "title": "Auth - Middleware rejects missing JWT for protected context endpoint with exact unauthorized status",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/roles/roles.create.test.js",
+      "title": "Roles - Create creates a role and verifies a persisted identifier is returned",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    },
+    {
+      "suite": "tests/users/users.create.test.js",
+      "title": "Users - Create creates a user and verifies a persisted identifier is returned",
+      "status": "passed",
+      "duration": 1,
+      "failures": []
+    }
+  ]
+}
