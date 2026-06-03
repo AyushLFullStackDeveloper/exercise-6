@@ -1,34 +1,64 @@
 {
-  "name": "scos-backend",
-  "version": "1.0.0",
-  "description": "SchoolCoreOS backend foundation with authentication and multi-tenant support",
-  "main": "server.js",
+  "name": "MentrixOS",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "lint": "eslint .",
+    "start": "react-native start",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "api:test": "jest --config tests/api.jest.config.js",
+    "api:seed": "node scripts/seed.js",
+    "api:cleanup": "node scripts/cleanup.js",
+    "api:reset-db": "node scripts/reset-db.js",
+
+    "detox:build-debug": "detox build --configuration android.emu.debug",
+    "detox:test-debug": "detox test --configuration android.emu.debug",
+
+    "detox:build-release": "detox build --configuration android.emu.release",
+    "detox:test-release": "detox test --configuration android.emu.release"
   },
-  "jest": {
-    "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.js"]
-  },
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "cors": "^2.8.6",
-    "dotenv": "^16.6.1",
-    "express": "^4.22.1",
-    "jsonwebtoken": "^9.0.3",
-    "morgan": "^1.10.1",
-    "pg": "^8.20.0",
-    "uuid": "^9.0.1"
+    "@expo/vector-icons": "^15.1.1",
+    "@react-native/new-app-screen": "0.85.2",
+    "@react-navigation/native": "^7.2.2",
+    "@react-navigation/native-stack": "^7.14.11",
+    "axios": "^1.15.2",
+    "i18next": "^26.0.8",
+    "react": "19.2.3",
+    "react-i18next": "^17.0.4",
+    "react-native": "0.85.2",
+    "react-native-gesture-handler": "^2.31.1",
+    "react-native-reanimated": "^4.3.0",
+    "react-native-safe-area-context": "^5.8.0",
+    "react-native-screens": "^4.24.0",
+    "react-native-vector-icons": "^10.3.0",
+    "react-native-worklets": "^0.8.1"
   },
   "devDependencies": {
-    "jest": "^30.4.2",
-    "nodemon": "^3.1.14",
-    "supertest": "^7.2.2"
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/runtime": "^7.25.0",
+    "@react-native-community/cli": "^20.1.0",
+    "@react-native-community/cli-platform-android": "20.1.0",
+    "@react-native-community/cli-platform-ios": "20.1.0",
+    "@react-native/babel-preset": "0.85.2",
+    "@react-native/eslint-config": "0.85.2",
+    "@react-native/jest-preset": "0.85.2",
+    "@react-native/metro-config": "0.85.2",
+    "@react-native/typescript-config": "0.85.2",
+    "@types/jest": "^29.5.13",
+    "@types/react": "^19.2.0",
+    "@types/react-test-renderer": "^19.1.0",
+    "detox": "^20.50.4",
+    "eslint": "^8.19.0",
+    "jest": "^29.7.0",
+    "prettier": "2.8.8",
+    "react-test-renderer": "19.2.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">= 22.11.0"
   }
 }
